@@ -1,0 +1,35 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+// Background compatibility
+@include m.bg-images(restaurants, favorites-background);
+
+.restaurants {
+    padding: v.$gap 0;
+    background-color: v.$lightGray;
+    background-attachment: fixed;
+    position: relative;
+
+    &::before {
+        content: '';
+        background-color: v.$lightGray;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        position: absolute;
+        opacity: 0.9;
+    }
+
+    &__heading {
+        color: v.$primary;
+        position: relative;
+        text-shadow: 1px 1px 10px v.$white, 0 0 2em v.$white;
+    }
+
+    &__grid {
+        @include m.tablet {
+            @include m.grid(repeat(2, 1fr), 4rem)
+        }
+    }
+}

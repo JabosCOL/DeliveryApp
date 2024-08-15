@@ -1,0 +1,40 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.steps {
+    &__tittle {
+        margin-bottom: v.$gap;
+    }
+
+    &__heading {
+        margin: 0;
+        color: v.$white;
+
+        &--text {
+            font-size: 2rem;
+            display: block;
+        }
+    }
+
+    &__cards {
+        @include m.tablet {
+            display: flex;
+            justify-content: space-between;
+            gap: v.$gap;
+        }
+    }
+
+
+    &__card {
+        transition: transform .3s;
+
+        &:hover {
+            transform: scale(1.2) rotate(-5deg);
+        }
+    }
+
+    &__img {
+        width: auto;
+        height: auto;
+    }
+}

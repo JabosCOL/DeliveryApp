@@ -1,0 +1,76 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.footer {
+    background-color: v.$secondary;
+    padding-top: v.$gap;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+
+        @include m.tablet {
+            @include m.grid(repeat(2, 1fr), 2rem)
+        }
+    }
+
+    &__image {
+        width: 50%;
+    }
+
+    &__social {
+        display: flex;
+        gap: 2.5rem;
+        justify-content: center;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 2px solid #DEDEDE;
+
+        & > img {
+            width: 1.6rem;
+        }
+    }
+
+    &__icon {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__information {
+        @include m.grid(repeat(2, 1fr), 10rem);
+
+        @include m.tablet {
+            gap: 0;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link {
+        color: #DEDEDE;
+        margin-bottom: 1.6rem;
+
+        &--svg {
+            display: flex;
+            gap: .5rem;
+        }
+    }
+
+    &__language-icon {
+        width: 1.6rem;
+    }
+
+    &__copyright {
+        background-color: v.$primary;
+        color: #DEDEDE;
+        margin: 2rem 0 0 0;
+        padding: 2rem;
+        font-weight: 700;
+    }
+}

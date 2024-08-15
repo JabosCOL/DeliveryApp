@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/build/css/app.css">
+</head>
+<body>
+    <header class="header container">
+        <div class="header__logo">
+            <a href="">
+                <img src="/build/img/logo.svg" alt="logo">
+            </a>
+        </div>
+        <nav class="navigation">
+            <a class="navigation__link" href="#">Sign In</a>
+            <a class="navigation__link" href="#">Sign Up</a>
+            <a class="navigation__link navigation__link--btn" href="#">Sign Up Your Restaurant</a>
+        </nav>
+    </header>
+    <section class="form container">
+        <div class="form__content bg-primary">
+            <form class="form__fields">
+                <h2 class="form__heading text-center">Find and order food from your favorite restaurant</h2>
+                <div class="form__field">
+                    <label class="form__label" for="restaurant">Restaurant</label>
+                    <input class="form__input" id="restaurant" type="text" placeholder="Your Favorite Restaurant">
+                </div>
+                <div class="form__field">
+                    <label class="form__label" for="dish">Dish</label>
+                    <input class="form__input" id="dish" type="text" placeholder="Pizza, Hamburger, Salad">
+                </div>
+                <input class="form__submit" type="submit" value="Find">
+            </form>
+        </div>
+        <div class="form__photo-container">
+            <img class="form__photo" src="/build/img/delivery-man.svg" alt="delivery-man img">
+        </div>
+    </section>
+    <section class="steps bg-primary">
+        <svg viewBox="0 0 500 120">
+            <path d="M 0 50 C 150 150 300 0 500 80 L 500 0 L 0 0" fill="#455a64"></path>
+            <path d="M 0 50 C 150 150 330 -30 500 50 L 500 0 L 0 0" fill="#FFFFFF"></path>
+        </svg>
+        <div class="steps__content container">
+            <div class="steps__tittle text-center">
+                <h2 class="steps__heading">How it works?
+                    <span class="steps__heading--text">As simple as 1, 2, 3</span>
+                </h2>
+            </div>
+            <div class="steps__cards">
+                <div class="steps__card">
+                    <div class="steps__img-container">
+                        <img class="steps__img" loading="lazy" src="/build/img/step_1.png" width="500" height="300" alt="step 1 img">
+                    </div>
+                </div>
+                <div class="steps__card">
+                    <div class="steps__img-container">
+                        <img class="steps__img" loading="lazy" src="/build/img/step_2.png" width="500" height="300" alt="step 2 img">
+                    </div>
+                </div>
+                <div class="steps__card">
+                    <div class="steps__img-container">
+                        <img class="steps__img" loading="lazy" src="/build/img/step_3.png" width="500" height="300" alt="step 3 img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials container">
+        <h2 class="testimonials__heading text-center">Testimonials</h2>
+        <div class="testimonials__grid">
+            <div class="testimonials__card">
+                <header class="testimonials__person">
+                    <div class="testimonials__photo-container">
+                        <picture>
+                            <source srcset="/build/img/testimonial1.avif" type="image/avif">
+                            <source srcset="/build/img/testimonial1.webp" type="image/webp">
+                            <img class="testimonials__photo" loading="lazy" src="/build/img/testimonial1.jpg" width="100" height="100" alt="testimonial photo">
+                        </picture>
+                    </div>
+                    <div class="testimonials__information">
+                        <p class="testimonials__author">Liam Williams</p>
+                        <picture>
+                            <source srcset="/build/img/stars.avif" type="image/avif">
+                            <source srcset="/build/img/stars.webp" type="image/webp">
+                            <img class="testimonial__stars" loading="lazy" src="/build/img/stars.png" width="100" height="100" alt="testimonial stars">
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonials__text">
+                    An excellent app. I can choose from a wide range of options and pay by card or cash, whichever suits me best.
+                </blockquote>
+            </div>
+            <div class="testimonials__card">
+                <header class="testimonials__person">
+                    <div class="testimonials__photo-container">
+                        <picture>
+                            <source srcset="/build/img/testimonial2.avif" type="image/avif">
+                            <source srcset="/build/img/testimonial2.webp" type="image/webp">
+                            <img class="testimonials__photo" loading="lazy" src="/build/img/testimonial2.jpg" width="100" height="100" alt="testimonial photo">
+                        </picture>
+                    </div>
+                    <div class="testimonials__information">
+                        <p class="testimonials__author">Olivia Johnson</p>
+                        <picture>
+                            <source srcset="/build/img/stars.avif" type="image/avif">
+                            <source srcset="/build/img/stars.webp" type="image/webp">
+                            <img class="testimonial_stars" loading="lazy" src="/build/img/stars.png" width="100" height="100" alt="testimonial stars">
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonials__text">
+                    An excellent app. I can choose from a wide range of options.
+                </blockquote>
+            </div>
+            <div class="testimonials__card">
+                <header class="testimonials__person">
+                    <div class="testimonials__photo-container">
+                        <picture>
+                            <source srcset="/build/img/testimonial3.avif" type="image/avif">
+                            <source srcset="/build/img/testimonial3.webp" type="image/webp">
+                            <img class="testimonials__photo" loading="lazy" src="/build/img/testimonial3.jpg" width="100" height="100" alt="testimonial photo">
+                        </picture>
+                    </div>
+                    <div class="testimonials__information">
+                        <p class="testimonials__author">Samuel Thompson</p>
+                        <picture>
+                            <source srcset="/build/img/stars.avif" type="image/avif">
+                            <source srcset="/build/img/stars.webp" type="image/webp">
+                            <img class="testimonial_stars" loading="lazy" src="/build/img/stars.png" width="100" height="100" alt="testimonial stars">
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonials__text">
+                    An excellent app. I can choose from a wide range of options and pay by card or cash, whichever suits me best. An excellent app. I can choose from a wide range of options and pay by card or cash, whichever suits me best.
+                </blockquote>
+            </div>
+            <div class="testimonials__card">
+                <header class="testimonials__person">
+                    <div class="testimonials__photo-container">
+                        <picture>
+                            <source srcset="/build/img/testimonial4.avif" type="image/avif">
+                            <source srcset="/build/img/testimonial4.webp" type="image/webp">
+                            <img class="testimonials__photo" loading="lazy" src="/build/img/testimonial4.jpg" width="100" height="100" alt="testimonial photo">
+                        </picture>
+                    </div>
+                    <div class="testimonials__information">
+                        <p class="testimonials__author">Elizabeth Miller</p>
+                        <picture>
+                            <source srcset="/build/img/stars.avif" type="image/avif">
+                            <source srcset="/build/img/stars.webp" type="image/webp">
+                            <img class="testimonial_stars" loading="lazy" src="/build/img/stars.png" width="100" height="100" alt="testimonial stars">
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonials__text">
+                    An excellent app. I can choose from a wide range of options and pay by card or cash, whichever suits me best.
+                </blockquote>
+            </div>
+            <div class="testimonials__card">
+                <header class="testimonials__person">
+                    <div class="testimonials__photo-container">
+                        <picture>
+                            <source srcset="/build/img/testimonial5.avif" type="image/avif">
+                            <source srcset="/build/img/testimonial5.webp" type="image/webp">
+                            <img class="testimonials__photo" loading="lazy" src="/build/img/testimonial5.jpg" width="100" height="100" alt="testimonial photo">
+                        </picture>
+                    </div>
+                    <div class="testimonials__information">
+                        <p class="testimonials__author">Theodore Davis</p>
+                        <picture>
+                            <source srcset="/build/img/stars.avif" type="image/avif">
+                            <source srcset="/build/img/stars.webp" type="image/webp">
+                            <img class="testimonial_stars" loading="lazy" src="/build/img/stars.png" width="100" height="100" alt="testimonial stars">
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonials__text">
+                    An excellent app. I can choose from a wide range of options and pay by card or cash, whichever suits me best.
+                </blockquote>
+            </div>
+        </div>
+    </section>
+    <section class="restaurants">
+        <div class="restaurants__content container">
+            <h2 class="restaurants__heading text-center">Favorite Restaurants</h2>
+            <div class="restaurants__grid">
+                <div class="restaurant">
+                    <picture class="restaurant__logo">
+                        <source srcset="/build/img/salad_logo.avif" type="image/avif">
+                        <source srcset="/build/img/salad_logo.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/salad_logo.png" width="500" height="300" alt="restaurant logo">
+                    </picture>
+                    <div class="restaurant__information">
+                        <picture class="restaurant__stars-container">
+                            <source srcset="/build/img/stars.avif" type="image/avif">
+                            <source srcset="/build/img/stars.webp" type="image/webp">
+                            <img class="restaurant__stars" loading="lazy" src="/build/img/stars.png" width="500" height="300" alt="restaurant rating">
+                        </picture>
+                        <h3 class="restaurant__name">Green Salad</h3>
+                        <p class="restaurant__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+                    </div>
+                </div>
+                <div class="restaurant">
+                    <picture class="restaurant__logo">
+                        <source srcset="/build/img/salad_logo.avif" type="image/avif">
+                        <source srcset="/build/img/salad_logo.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/salad_logo.png" width="500" height="300" alt="restaurant logo">
+                    </picture>
+                    <div class="restaurant__information">
+                        <picture class="restaurant__stars-container">
+                            <source srcset="/build/img/stars.avif" type="image/avif">
+                            <source srcset="/build/img/stars.webp" type="image/webp">
+                            <img class="restaurant__stars" loading="lazy" src="/build/img/stars.png" width="500" height="300" alt="restaurant rating">
+                        </picture>
+                        <h3 class="restaurant__name">Green Salad</h3>
+                        <p class="restaurant__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+                    </div>
+                </div>
+                <div class="restaurant">
+                    <picture class="restaurant__logo">
+                        <source srcset="/build/img/salad_logo.avif" type="image/avif">
+                        <source srcset="/build/img/salad_logo.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/salad_logo.png" width="500" height="300" alt="restaurant logo">
+                    </picture>
+                    <div class="restaurant__information">
+                        <picture class="restaurant__stars-container">
+                            <source srcset="/build/img/stars.avif" type="image/avif">
+                            <source srcset="/build/img/stars.webp" type="image/webp">
+                            <img class="restaurant__stars" loading="lazy" src="/build/img/stars.png" width="500" height="300" alt="restaurant rating">
+                        </picture>
+                        <h3 class="restaurant__name">Green Salad</h3>
+                        <p class="restaurant__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+                    </div>
+                </div>
+                <div class="restaurant">
+                    <picture class="restaurant__logo">
+                        <source srcset="/build/img/salad_logo.avif" type="image/avif">
+                        <source srcset="/build/img/salad_logo.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/salad_logo.png" width="500" height="300" alt="restaurant logo">
+                    </picture>
+                    <div class="restaurant__information">
+                        <picture class="restaurant__stars-container">
+                            <source srcset="/build/img/stars.avif" type="image/avif">
+                            <source srcset="/build/img/stars.webp" type="image/webp">
+                            <img class="restaurant__stars" loading="lazy" src="/build/img/stars.png" width="500" height="300" alt="restaurant rating">
+                        </picture>
+                        <h3 class="restaurant__name">Green Salad</h3>
+                        <p class="restaurant__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+                    </div>
+                </div>
+                <div class="restaurant">
+                    <picture class="restaurant__logo">
+                        <source srcset="/build/img/salad_logo.avif" type="image/avif">
+                        <source srcset="/build/img/salad_logo.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/salad_logo.png" width="500" height="300" alt="restaurant logo">
+                    </picture>
+                    <div class="restaurant__information">
+                        <picture class="restaurant__stars-container">
+                            <source srcset="/build/img/stars.avif" type="image/avif">
+                            <source srcset="/build/img/stars.webp" type="image/webp">
+                            <img class="restaurant__stars" loading="lazy" src="/build/img/stars.png" width="500" height="300" alt="restaurant rating">
+                        </picture>
+                        <h3 class="restaurant__name">Green Salad</h3>
+                        <p class="restaurant__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+                    </div>
+                </div>
+                <div class="restaurant">
+                    <picture class="restaurant__logo">
+                        <source srcset="/build/img/salad_logo.avif" type="image/avif">
+                        <source srcset="/build/img/salad_logo.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/salad_logo.png" width="500" height="300" alt="restaurant logo">
+                    </picture>
+                    <div class="restaurant__information">
+                        <picture class="restaurant__stars-container">
+                            <source srcset="/build/img/stars.avif" type="image/avif">
+                            <source srcset="/build/img/stars.webp" type="image/webp">
+                            <img class="restaurant__stars" loading="lazy" src="/build/img/stars.png" width="500" height="300" alt="restaurant rating">
+                        </picture>
+                        <h3 class="restaurant__name">Green Salad</h3>
+                        <p class="restaurant__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+                    </div>
+                </div>
+                <div class="restaurant">
+                    <picture class="restaurant__logo">
+                        <source srcset="/build/img/salad_logo.avif" type="image/avif">
+                        <source srcset="/build/img/salad_logo.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/salad_logo.png" width="500" height="300" alt="restaurant logo">
+                    </picture>
+                    <div class="restaurant__information">
+                        <picture class="restaurant__stars-container">
+                            <source srcset="/build/img/stars.avif" type="image/avif">
+                            <source srcset="/build/img/stars.webp" type="image/webp">
+                            <img class="restaurant__stars" loading="lazy" src="/build/img/stars.png" width="500" height="300" alt="restaurant rating">
+                        </picture>
+                        <h3 class="restaurant__name">Green Salad</h3>
+                        <p class="restaurant__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+                    </div>
+                </div>
+                <div class="restaurant">
+                    <picture class="restaurant__logo">
+                        <source srcset="/build/img/salad_logo.avif" type="image/avif">
+                        <source srcset="/build/img/salad_logo.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/salad_logo.png" width="500" height="300" alt="restaurant logo">
+                    </picture>
+                    <div class="restaurant__information">
+                        <picture class="restaurant__stars-container">
+                            <source srcset="/build/img/stars.avif" type="image/avif">
+                            <source srcset="/build/img/stars.webp" type="image/webp">
+                            <img class="restaurant__stars" loading="lazy" src="/build/img/stars.png" width="500" height="300" alt="restaurant rating">
+                        </picture>
+                        <h3 class="restaurant__name">Green Salad</h3>
+                        <p class="restaurant__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+                    </div>
+                </div>
+                <div class="restaurant">
+                    <picture class="restaurant__logo">
+                        <source srcset="/build/img/salad_logo.avif" type="image/avif">
+                        <source srcset="/build/img/salad_logo.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/salad_logo.png" width="500" height="300" alt="restaurant logo">
+                    </picture>
+                    <div class="restaurant__information">
+                        <picture class="restaurant__stars-container">
+                            <source srcset="/build/img/stars.avif" type="image/avif">
+                            <source srcset="/build/img/stars.webp" type="image/webp">
+                            <img class="restaurant__stars" loading="lazy" src="/build/img/stars.png" width="500" height="300" alt="restaurant rating">
+                        </picture>
+                        <h3 class="restaurant__name">Green Salad</h3>
+                        <p class="restaurant__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+                    </div>
+                </div>
+                <div class="restaurant">
+                    <picture class="restaurant__logo">
+                        <source srcset="/build/img/salad_logo.avif" type="image/avif">
+                        <source srcset="/build/img/salad_logo.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/salad_logo.png" width="500" height="300" alt="restaurant logo">
+                    </picture>
+                    <div class="restaurant__information">
+                        <picture class="restaurant__stars-container">
+                            <source srcset="/build/img/stars.avif" type="image/avif">
+                            <source srcset="/build/img/stars.webp" type="image/webp">
+                            <img class="restaurant__stars" loading="lazy" src="/build/img/stars.png" width="500" height="300" alt="restaurant rating">
+                        </picture>
+                        <h3 class="restaurant__name">Green Salad</h3>
+                        <p class="restaurant__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partner container">
+        <h2 class="partner__heading text-center">Deliver with Delivery App</h2>
+        <div class="partner__grid">
+            <picture class="partner__image-container">
+                <source srcset="/build/img/delivery-man.avif" type="image/avif">
+                <source srcset="/build/img/delivery-man.webp" type="image/webp">
+                <img class="partner__image" loading="lazy" src="/build/img/delivery-man.jpg" width="500" height="300" alt="delivery-man image">
+            </picture>
+            <div class="partner__information">
+                <p class="partner__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatem sapiente laboriosam iste nihil, consequatur mollitia doloribus aliquid fuga, totam distinctio nesciunt explicabo quas minus libero ducimus harum at sed?</p>
+                <p class="partner__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatem sapiente laboriosam iste nihil, consequatur mollitia doloribus aliquid fuga, totam distinctio nesciunt explicabo quas minus libero ducimus harum at sed?</p>
+                <a class="partner__link" href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <section class="download">
+        <div class="download__content container">
+            <div class="download__information">
+                <h3 class="download__heading text-center">Get The App</h3>
+                <p class="download__text">Available on iOS and Android</p>
+                <div class="download__links">
+                    <a class="download__link" href="#">
+                        <img class="download__link-image" loading="lazy" src="/build/img/apple-store.svg" width="500" height="300" alt="apple-store image">
+                    </a>
+                    <a class="download__link" href="#">
+                        <img class="download__link-image" loading="lazy" src="/build/img/android-store.svg" width="500" height="300" alt="android-store image">
+                    </a>
+                </div>
+            </div>
+            <div class="download__image">
+                <picture>
+                    <source srcset="/build/img/app.avif" type="image/avif">
+                    <source srcset="/build/img/app.webp" type="image/webp">
+                    <img loading="lazy" src="/build/img/app.png" width="500" height="300" alt="app image">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__content container">
+            <div class="footer__image">
+                <a href="">
+                    <img class="footer__logo" src="/build/img/logo-white.svg" alt="logo">
+                </a>
+                <div class="footer__social">
+                    <img class="footer__icon" src="/build/img/facebook.svg" alt="facebook icon">
+                    <img class="footer__icon" src="/build/img/x-social-media.svg" alt="x-social-media icon">
+                    <img class="footer__icon" src="/build/img/instagram.svg" alt="instagram icon">
+                </div>
+            </div>
+            <div class="footer__information">
+                <div class="footer__links">
+                    <a class="footer__link" href="#">Get Help</a>
+                    <a class="footer__link" href="#">About us</a>
+                    <a class="footer__link" href="#">Sign up to deliver</a>
+                    <a class="footer__link" href="#">Promotions</a>
+                </div>
+                <div class="footer__links">
+                    <a class="footer__link" href="#">View all cities</a>
+                    <a class="footer__link" href="#">View all countries</a>
+                    <a class="footer__link" href="#">Shop groceries</a>
+                    <a class="footer__link footer__link--svg" href="#">
+                        <img class="footer__language-icon" src="/build/img/language-icon.svg" alt="language-icon">
+                        English
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copyright text-center">&copy; 2024 Delivery App.</p>
+    </footer>
+    <script src="src/js/img.js"></script>
+</body>
+</html>
